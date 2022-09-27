@@ -51,6 +51,11 @@
     cursor: pointer;
   
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      
+      &:hover .close-icon {
+    fill: var(--accent-color);
+  }
   }
   
   .close-icon {
@@ -100,6 +105,18 @@
     color: var(--primary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+
+      &:hover + .field__icon,
+      &:focus + .field__icon {
+    fill: var(--accent-color);
+  }
+  
   }
   .field__icon {
     position: absolute;
@@ -120,13 +137,21 @@
     color: var(--primary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+      }
+
+      &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+      }
   }
-  .field__comment::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
+ 
   .checkbox {
     padding-left: 14px;
     margin-top: 25px;
@@ -175,25 +200,3 @@
     margin-left: 4px;
     color: rgba(33, 150, 243, 1);
   }
-  
-  .modal__close-btn:hover .close-icon {
-    fill: var(--accent-color);
-  }
-  
-  .field__input:hover,
-  .field__inputt:focus {
-    outline: none;
-    border-color: var(--accent-color);
-  }
-  
-  .field__comment:hover,
-  .field__comment:focus {
-    outline: none;
-    border-color: var(--accent-color);
-  }
-  
-  .field__input:hover + .field__icon,
-  .field__input:focus + .field__icon {
-    fill: var(--accent-color);
-  }
-  
