@@ -23,3 +23,12 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+%section--no-padding {
+    padding-bottom: 0;
+  }
+
