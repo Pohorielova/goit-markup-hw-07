@@ -2,7 +2,7 @@
     @extend %section;
     @extend %section--no-padding;
 }
-.feature__caption--is-hidden{
+.feature__caption{
     @extend %visually-hidden;
 }
 .feature__box {

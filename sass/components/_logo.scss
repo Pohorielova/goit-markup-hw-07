@@ -1,7 +1,7 @@
 .logo {
   @extend %link;
-    color: var(--clear-black-color);
-  
+   
+    color: var(--accent-color);
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     line-height: 1.19;
@@ -14,13 +14,17 @@
       text-decoration: underline var(--accent-color);
     }
   }
+
   
-  .logo__part--accent {
-    color: var(--accent-color);
-  }
+  .logo--white{
+    margin-bottom: 20px;
+    
+    & span {
+      color: var(--clear-white-color);
+      
+    }
+  } 
   
-  .logo__part--white {
-    color: var(--clear-white-color);
-  }
-  
- 
+ .logo--black span{
+  color: var(--clear-black-color);
+}
